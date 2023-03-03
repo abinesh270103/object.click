@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>object010</title>
+
+</head>
+<body>
+
+<h2 id="task">Name</h2>
+
+<p id="task01">Form</p>
+
+
+<button onclick="generate()">Click</button>
+
+<script>
+let quotes=[
+    {
+    Name:"Abinesh",
+	From:"s.v.karai",
+    },
+    {
+    Name:"Abi",
+	From:"s.v.k",
+    },
+	{
+    Name:"karthi",
+	From:"s.v.karai",
+    },
+	{
+    Name:"Arjun",
+	From:"s.v.karai",
+    },
+	{
+    Name:"Jagan",
+	From:"s.v.karai",
+    },
+	{
+    Name:"Arun",
+	From:"s.v.karai",
+    },
+	{
+    Name:"Marish",
+	From:"s.v.karai",
+    },
+]
+<!-- console.log(quotes); -->
+ let head=document.getElementById("task");
+ let para=document.getElementById("task01");
+ <!-- let btn=doucment.getElementById("task02"); -->
+ <!-- btn.addEventListener("click",generate); -->
+ function generate(){
+ 
+ let newquote=parseInt(Math.random()*quotes.length);
+console.log(quotes[newquote].Name); 
+head.innerHTML=(quotes[newquote].Name);
+para.innerHTML=(quotes[newquote].From);
+ 
+
+ 
+ <!-- console.log(newquote); -->
+ }				
+</script>
+</body>
+</html>
